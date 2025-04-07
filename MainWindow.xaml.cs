@@ -95,12 +95,12 @@ namespace WPF_Geometric
         }
         private void DrawMySquare_Click(object sender, RoutedEventArgs e)
         {
-            var mySquare = new MySquareObject(
+            var mySquare = new MySquare(
                 GetRandom(0, 1000),
                 GetRandom(0, 700),
                 ((ComboBoxItem)cmbColor.SelectedItem).Content.ToString(),
                 GetSelectedColor(),
-                GetRandom(50, 200)
+                200 // Размер фигуры
             );
             mySquare.Draw(canvas);
         }
