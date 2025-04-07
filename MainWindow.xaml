@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF_Geometric.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Геометрические фигуры" Height="700" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Canvas x:Name="canvas" Background="White" Margin="10"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+      
+            <StackPanel Orientation="Vertical" Margin="5">
+                <TextBlock Text="Цвет:"/>
+                <ComboBox x:Name="cmbColor" Width="100" SelectedIndex="0">
+                    <ComboBoxItem Content="Красный"/>
+                    <ComboBoxItem Content="Синий"/>
+                    <ComboBoxItem Content="Зеленый"/>
+                </ComboBox>
+            </StackPanel>
+            
+            <Button Content="Точка" Width="80" Margin="5" Click="DrawPoint_Click"/>
+            <Button Content="Квадрат" Width="80" Margin="5" Click="DrawSquare_Click"/>
+            <Button Content="Треугольник" Width="100" Margin="5" Click="DrawTriangle_Click"/>
+            <Button Content="Мой рисунок" Width="100" Margin="5" Click="DrawMyDrawing_Click"/>
+            <Button Content="Фрактал" Width="80" Margin="5" Click="DrawFractal_Click"/>
+            <Button Content="Мой квадрат" Width="80" Margin="5" Click="DrawMySquare_Click"/>
+            <Button Content="Очистить" Width="80" Margin="5" Click="ClearCanvas_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
