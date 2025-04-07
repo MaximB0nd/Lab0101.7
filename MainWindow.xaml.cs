@@ -100,7 +100,7 @@ namespace WPF_Geometric
                 GetRandom(0, 700),
                 ((ComboBoxItem)cmbColor.SelectedItem).Content.ToString(),
                 GetSelectedColor(),
-                200 // Размер фигуры
+                200 
             );
             mySquare.Draw(canvas);
         }
