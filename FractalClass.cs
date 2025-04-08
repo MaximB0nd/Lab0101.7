@@ -30,9 +30,6 @@ namespace WPF_Geometric.Models
             double angleLeft = Math.PI * (ANGLE + randomAngle) / 180;
             double newX2L = x2 + (Math.Cos(angleLeft) * dx - Math.Sin(angleLeft) * dy) * SCALE;
             double newY2L = y2 + (Math.Sin(angleLeft) * dx + Math.Cos(angleLeft) * dy) * SCALE;
-            
-            
-            
             double angleRight = Math.PI * (-ANGLE + randomAngle) / 180;
             double newX2R = x2 + (Math.Cos(angleRight) * dx - Math.Sin(angleRight) * dy) * SCALE;
             double newY2R = y2 + (Math.Sin(angleRight) * dx + Math.Cos(angleRight) * dy) * SCALE;

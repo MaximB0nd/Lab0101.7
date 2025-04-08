@@ -9,7 +9,7 @@ namespace WPF_Geometric.Models
     {
         private readonly int _size;
 
-        public MySquare(int x, int y, string colorName, Color color, int size) 
+        public MySquare(int x, int y, Color color, int size) 
             : base(x, y, color)
         {
             _size = size;

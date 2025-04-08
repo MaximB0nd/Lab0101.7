@@ -10,7 +10,7 @@ namespace WPF_Geometric.Models
         private const double SCALE_FACTOR = 0.85;
         private const double ROTATION_STEP = 10;
 
-        public MyDrawingObject(int x, int y, string colorName, Color color, int size) 
+        public MyDrawingObject(int x, int y, Color color, int size) 
             : base(x, y, color)
         {
             _initialSize = size;

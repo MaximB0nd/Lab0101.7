@@ -36,7 +36,6 @@ namespace WPF_Geometric
             var point = new PointObject(
                 GetRandom(0, 1000),
                 GetRandom(0, 700),
-                ((ComboBoxItem)cmbColor.SelectedItem).Content.ToString(),
                 GetSelectedColor()
             );
             point.Draw(canvas);
@@ -47,7 +46,6 @@ namespace WPF_Geometric
             var square = new SquareObject(
                 GetRandom(0, 1000),
                 GetRandom(0, 700),
-                ((ComboBoxItem)cmbColor.SelectedItem).Content.ToString(),
                 GetSelectedColor(),
                 GetRandom(50, 200)
             );
@@ -59,7 +57,6 @@ namespace WPF_Geometric
             var triangle = new TriangleObject(
                 GetRandom(0, 1000),
                 GetRandom(0, 700),
-                ((ComboBoxItem)cmbColor.SelectedItem).Content.ToString(),
                 GetSelectedColor(),
                 GetRandom(50, 200)
             );
@@ -71,7 +68,6 @@ namespace WPF_Geometric
             var myDrawing = new MyDrawingObject(
                 GetRandom(0, 1000),
                 GetRandom(0, 700),
-                ((ComboBoxItem)cmbColor.SelectedItem).Content.ToString(),
                 GetSelectedColor(),
                 300 
             );
@@ -98,7 +94,6 @@ namespace WPF_Geometric
             var mySquare = new MySquare(
                 GetRandom(0, 1000),
                 GetRandom(0, 700),
-                ((ComboBoxItem)cmbColor.SelectedItem).Content.ToString(),
                 GetSelectedColor(),
                 200 
             );

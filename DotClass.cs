@@ -6,7 +6,7 @@ namespace WPF_Geometric.Models
 {
     internal class PointObject : GeometricObject
     {
-        public PointObject(int x, int y, string colorName, Color color) 
+        public PointObject(int x, int y, Color color) 
             : base(x, y, color)
         {
         }
